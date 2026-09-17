@@ -21,7 +21,7 @@ export default function FloatingContact() {
   const [showNumbers, setShowNumbers] = useState(false);
 
   const whatsappUrl =
-    "https://wa.me/919871819548?text=Hello%20Umaid%20Alam%20Interior%2C%20I%20am%20interested%20in%20your%20services";
+    "https://wa.me/919871819548?text=Hello%20Ummed%20Alam%20Interior%2C%20I%20am%20interested%20in%20your%20services";
 
   return (
     <div className="fixed bottom-6 right-6 z-40 hidden md:flex flex-col items-end gap-3 font-sans">
@@ -46,7 +46,7 @@ export default function FloatingContact() {
               className="flex items-center justify-between p-2.5 rounded-xl bg-red-50 text-[#E8412C] hover:bg-red-100 transition-colors"
             >
               <div>
-                <div className="text-xs font-bold text-[#0B2A4A]">Umaid Alam</div>
+                <div className="text-xs font-bold text-[#0B2A4A]">Ummed Alam</div>
                 <div className="text-sm font-extrabold">+91 98718 19548</div>
               </div>
               <Phone className="w-4 h-4" />
@@ -57,7 +57,7 @@ export default function FloatingContact() {
               className="flex items-center justify-between p-2.5 rounded-xl bg-blue-50 text-[#0B2A4A] hover:bg-blue-100 transition-colors"
             >
               <div>
-                <div className="text-xs font-bold text-gray-600">Sohail Saifi</div>
+                <div className="text-xs font-bold text-gray-600">Suhail Saifi</div>
                 <div className="text-sm font-extrabold">+91 99992 93127</div>
               </div>
               <Phone className="w-4 h-4" />
@@ -85,7 +85,7 @@ export default function FloatingContact() {
         {/* Call Floating Button (Bottom) */}
         <button
           onClick={() => setShowNumbers(!showNumbers)}
-          aria-label="Call Umaid Alam"
+          aria-label="Call Ummed Alam"
           className="w-14 h-14 rounded-full bg-[#0B2A4A] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group relative border-2 border-white"
         >
           <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />

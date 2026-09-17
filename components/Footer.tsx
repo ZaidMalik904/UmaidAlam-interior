@@ -66,7 +66,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-[#E8412C] shrink-0 mt-1" />
                 <div>
-                  <div className="font-bold text-white">Umaid Alam:</div>
+                  <div className="font-bold text-white">Ummed Alam:</div>
                   <a href="tel:+919871819548" className="hover:text-[#E8412C] transition-colors">
                     +91 98718 19548
                   </a>
@@ -76,7 +76,7 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <Phone className="w-4 h-4 text-[#E8412C] shrink-0 mt-1" />
                 <div>
-                  <div className="font-bold text-white">Sohail Saifi:</div>
+                  <div className="font-bold text-white">Suhail Saifi:</div>
                   <a href="tel:+919999293127" className="hover:text-[#E8412C] transition-colors">
                     +91 99992 93127
                   </a>
@@ -95,10 +95,10 @@ export default function Footer() {
         {/* Footer Bottom Centered Bar */}
         <div className="pt-8 text-center space-y-2">
           <div className="text-base font-extrabold tracking-wider text-white font-heading">
-            UMAID ALAM <span className="text-[#E8412C]">|</span> All Interior Specialist
+            UMMED ALAM <span className="text-[#E8412C]">|</span> All Interior Specialist
           </div>
           <p className="text-xs text-gray-400">
-            © 2026 Umaid Alam. All Rights Reserved. Built for Umaid Alam & Sohail Saifi.
+            © 2026 Ummed Alam. All Rights Reserved. Built for Ummed Alam & Suhail Saifi.
           </p>
         </div>
 

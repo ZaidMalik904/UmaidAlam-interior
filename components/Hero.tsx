@@ -4,7 +4,7 @@ import { WhatsAppIcon } from "./FloatingContact";
 
 export default function Hero() {
   const whatsappUrl =
-    "https://wa.me/919871819548?text=Hello%20Umaid%20Alam%20Interior%2C%20I%20am%20interested%20in%20your%20services";
+    "https://wa.me/919871819548?text=Hello%20Ummed%20Alam%20Interior%2C%20I%20am%20interested%20in%20your%20services";
 
   return (
     <section id="hero" className="relative pt-28 pb-16 md:pt-36 md:pb-24 bg-white overflow-hidden">
@@ -26,7 +26,7 @@ export default function Hero() {
             {/* Main Heading */}
             <div className="space-y-1">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0B2A4A] leading-[1.1] font-heading tracking-tight">
-                UMAID ALAM
+                UMMED ALAM
               </h1>
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#E8412C] font-heading tracking-tight">
                 ALL INTERIOR SPECIALIST
@@ -42,12 +42,12 @@ export default function Hero() {
             <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm font-bold text-[#0B2A4A] bg-[#EEF3F8] p-3.5 rounded-2xl border border-blue-100">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#E8412C]" />
-                <span>Umaid Alam: <a href="tel:+919871819548" className="text-[#E8412C] hover:underline font-extrabold">98718 19548</a></span>
+                <span>Ummed Alam: <a href="tel:+919871819548" className="text-[#E8412C] hover:underline font-extrabold">98718 19548</a></span>
               </div>
               <span className="text-gray-300 hidden sm:inline">|</span>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#0B2A4A]" />
-                <span>Sohail Saifi: <a href="tel:+919999293127" className="text-[#0B2A4A] hover:underline font-extrabold">99992 93127</a></span>
+                <span>Suhail Saifi: <a href="tel:+919999293127" className="text-[#0B2A4A] hover:underline font-extrabold">99992 93127</a></span>
               </div>
             </div>
 
@@ -94,8 +94,8 @@ export default function Hero() {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
               <Image
-                src="/images/client/client-podcast-studio.jpg"
-                alt="Umaid Alam Modern Acoustic Podcast Studio Setup"
+                src="/images/work/work-ceiling-acoustics.png"
+                alt="Ummed Alam Architectural Acoustic Ceiling Execution"
                 width={800}
                 height={600}
                 priority

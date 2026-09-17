@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform lg:-translate-x-6 group">
                 <Image
                   src="/images/about-interior.jpg"
-                  alt="Umed Alam interior craftsmen at work on acoustic partition wall"
+                  alt="Ummed Alam interior craftsmen at work on acoustic partition wall"
                   width={600}
                   height={500}
                   className="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"

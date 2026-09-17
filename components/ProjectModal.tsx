@@ -61,7 +61,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         </button>
 
         {/* Modal Image Header */}
-        <div className="relative h-72 sm:h-96 w-full bg-gray-900">
+        <div className="relative w-full h-72 sm:h-96 min-h-[288px] sm:min-h-[384px] shrink-0 bg-gray-900">
           <Image
             src={project.image}
             alt={project.title}
@@ -82,7 +82,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* Modal Content */}
         <div className="p-6 sm:p-8 space-y-6">
           <p className="text-base text-[#4A5568] leading-relaxed">
-            {project.description} Complete site execution by Umed Alam specialists using premium acoustic materials and modern architectural finishing.
+            {project.description} Complete site execution by Ummed Alam specialists using premium acoustic materials and modern architectural finishing.
           </p>
 
           <div className="grid grid-cols-2 gap-4 border-t border-gray-100 pt-4">

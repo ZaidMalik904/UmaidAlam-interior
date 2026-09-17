@@ -3,7 +3,7 @@ import { WhatsAppIcon } from "./FloatingContact";
 
 export default function Contact() {
   const whatsappUrl =
-    "https://wa.me/919871819548?text=Hello%20Umaid%20Alam%20Interior%2C%20I%20am%20interested%20in%20your%20services";
+    "https://wa.me/919871819548?text=Hello%20Ummed%20Alam%20Interior%2C%20I%20am%20interested%20in%20your%20services";
 
   return (
     <section id="contact" className="py-20 bg-white">
@@ -25,7 +25,7 @@ export default function Contact() {
         {/* Top Row: Direct Contact Cards (3 Cards) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-6">
           
-          {/* Umaid Alam Call Card */}
+          {/* Ummed Alam Call Card */}
           <div className="bg-[#EEF3F8] p-8 rounded-3xl border border-blue-100 hover:border-[#0B2A4A]/30 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-4">
               <div className="w-14 h-14 rounded-2xl bg-[#0B2A4A] text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
@@ -36,7 +36,7 @@ export default function Contact() {
                   Proprietor / Lead Specialist
                 </span>
                 <h3 className="text-2xl font-extrabold text-[#0B2A4A] font-heading mt-1">
-                  Umaid Alam
+                  Ummed Alam
                 </h3>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function Contact() {
             </a>
           </div>
 
-          {/* Sohail Saifi Call Card */}
+          {/* Suhail Saifi Call Card */}
           <div className="bg-[#EEF3F8] p-8 rounded-3xl border border-blue-100 hover:border-[#E8412C]/30 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-4">
               <div className="w-14 h-14 rounded-2xl bg-[#E8412C] text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
@@ -61,7 +61,7 @@ export default function Contact() {
                   Technical Lead / Partner
                 </span>
                 <h3 className="text-2xl font-extrabold text-[#0B2A4A] font-heading mt-1">
-                  Sohail Saifi
+                  Suhail Saifi
                 </h3>
               </div>
             </div>

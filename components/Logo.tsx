@@ -114,7 +114,7 @@ export default function Logo({
       <Link href="#hero" className={`inline-flex items-center ${className}`}>
         <Image
           src="/images/logo.png"
-          alt="Umaid Alam - All Interior Specialist"
+          alt="Ummed Alam - All Interior Specialist"
           width={240}
           height={64}
           priority
@@ -144,7 +144,7 @@ export default function Logo({
             isLight ? "text-white" : "text-[#0B2A4A]"
           } ${titleSizeClass}`}
         >
-          UMAID ALAM
+          UMMED ALAM
         </span>
         {showSubtitle && (
           <span

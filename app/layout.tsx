@@ -28,10 +28,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Umaid Alam | All Interior Specialist",
+  title: "Ummed Alam | All Interior Specialist",
   description: "Complete interior and construction solutions — Sound Proofing, Acoustic Seat Sealing, Gypsum Partitions, Woodwork, Civil Work, Paint Work, Glass Work, and Lower Panel SS Work.",
   keywords: [
-    "Umaid Alam",
+    "Ummed Alam",
     "Interior Specialist",
     "Sound Proofing",
     "Acoustic Seat Sealing",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     "Lower Panel SS Work",
     "Noida Interior Contractor"
   ],
-  authors: [{ name: "Umaid Alam" }],
+  authors: [{ name: "Ummed Alam" }],
   icons: {
     icon: [
       { url: "/icon.png", type: "image/png" },
@@ -53,16 +53,16 @@ export const metadata: Metadata = {
     apple: "/icon.png",
   },
   openGraph: {
-    title: "Umaid Alam | All Interior Specialist",
+    title: "Ummed Alam | All Interior Specialist",
     description: "Quality Work | Modern Design | On Time Delivery. Complete interior design & construction solutions.",
-    url: "https://umaidalaminterior.com",
-    siteName: "Umaid Alam Interior",
+    url: "https://ummedalaminterior.com",
+    siteName: "Ummed Alam Interior",
     images: [
       {
         url: "/images/logo.png",
         width: 1200,
         height: 630,
-        alt: "Umaid Alam - All Interior Specialist Logo",
+        alt: "Ummed Alam - All Interior Specialist Logo",
       },
     ],
     locale: "en_IN",

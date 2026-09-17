@@ -54,7 +54,7 @@ export default function Navbar() {
   ];
 
   const whatsappUrl =
-    "https://wa.me/919871819548?text=Hello%20Umaid%20Alam%20Interior%2C%20I%20am%20interested%20in%20your%20services";
+    "https://wa.me/919871819548?text=Hello%20Ummed%20Alam%20Interior%2C%20I%20am%20interested%20in%20your%20services";
 
   return (
     <>
@@ -196,14 +196,14 @@ export default function Navbar() {
                   href="tel:+919871819548"
                   className="flex flex-col items-center justify-center bg-[#0B2A4A] text-white py-2.5 rounded-xl text-xs font-bold shadow-sm hover:bg-[#071C33] transition-colors"
                 >
-                  <span>Umaid Alam</span>
+                  <span>Ummed Alam</span>
                   <span className="text-[10px] text-gray-300">98718 19548</span>
                 </a>
                 <a
                   href="tel:+919999293127"
                   className="flex flex-col items-center justify-center bg-[#E8412C] text-white py-2.5 rounded-xl text-xs font-bold shadow-sm hover:bg-[#CF3320] transition-colors"
                 >
-                  <span>Sohail Saifi</span>
+                  <span>Suhail Saifi</span>
                   <span className="text-[10px] text-gray-100">99992 93127</span>
                 </a>
               </div>
