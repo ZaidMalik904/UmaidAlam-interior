@@ -14,7 +14,7 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      const sections = ["hero", "about", "services", "portfolio", "contact"];
+      const sections = ["hero", "about", "services", "portfolio", "gallery", "contact"];
       const current = sections.find((section) => {
         const el = document.getElementById(section);
         if (el) {
@@ -50,6 +50,7 @@ export default function Navbar() {
     { name: "About Us", href: "#about", id: "about" },
     { name: "Services", href: "#services", id: "services" },
     { name: "Our Work", href: "#portfolio", id: "portfolio" },
+    { name: "Gallery", href: "#gallery", id: "gallery" },
     { name: "Contact", href: "#contact", id: "contact" },
   ];
 

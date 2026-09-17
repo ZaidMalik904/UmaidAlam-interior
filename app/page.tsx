@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
+import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ProjectModal from "@/components/ProjectModal";
@@ -39,7 +40,10 @@ export default function Home() {
       {/* 5. Our Work Section (#portfolio) */}
       <Projects onSelectProject={(project) => setSelectedProject(project)} />
 
-      {/* 6. Contact Us Section (#contact) */}
+      {/* 6. Photo Gallery Section (#gallery) */}
+      <Gallery />
+
+      {/* 7. Contact Us Section (#contact) */}
       <Contact />
 
       {/* 7. Footer */}
