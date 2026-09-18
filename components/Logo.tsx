@@ -111,7 +111,7 @@ export default function Logo({
 
   if (variant === "image") {
     return (
-      <Link href="#hero" className={`inline-flex items-center ${className}`}>
+      <Link href="#home" className={`inline-flex items-center ${className}`}>
         <Image
           src="/images/logo.png"
           alt="Ummed Alam - All Interior Specialist"
@@ -127,7 +127,7 @@ export default function Logo({
   const isLight = variant === "light";
 
   return (
-    <Link href="#hero" className={`inline-flex items-center gap-3 group focus:outline-none ${className}`}>
+    <Link href="#home" className={`inline-flex items-center gap-3 group focus:outline-none ${className}`}>
       {/* Icon */}
       <div className="shrink-0">
         {isLight ? (

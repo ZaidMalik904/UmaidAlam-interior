@@ -1,9 +1,13 @@
 import Logo from "./Logo";
 import { Phone, MapPin, Clock } from "lucide-react";
+import { WhatsAppIcon } from "./FloatingContact";
 
 export default function Footer() {
+  const whatsappUrl =
+    "https://wa.me/919871819548?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20interior%2Facoustic%20work%20requirement.%20Please%20share%20more%20details.";
+
   return (
-    <footer className="bg-[#0B2A4A] text-white pt-16 pb-8 border-t border-blue-900">
+    <footer className="bg-[#0B2A4A] text-white pt-16 pb-8 border-t border-blue-900 font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Footer Top Grid */}
@@ -13,30 +17,34 @@ export default function Footer() {
           <div className="md:col-span-5 space-y-4">
             <Logo variant="light" size="lg" />
 
-            <p className="text-sm text-gray-300 max-w-md leading-relaxed pt-2">
-              Complete interior and civil construction solutions specializing in Sound Proofing, Acoustic Seat Sealing, Gypsum Partitions & Woodwork, Civil Work, Paint Work, Glass Work & Lower Panel SS Work.
+            <p className="text-sm font-bold text-[#E8412C]">
+              Interior & Acoustic Solutions Across India
             </p>
 
-            <div className="pt-2 flex items-center gap-3 text-xs text-emerald-400 font-bold">
+            <p className="text-xs text-gray-300 max-w-md leading-relaxed">
+              Complete interior, acoustic, soundproofing, civil, woodwork, false ceiling and glass work solutions for residential and commercial projects across India.
+            </p>
+
+            <div className="pt-1 flex items-center gap-3 text-xs text-emerald-400 font-extrabold">
               <span className="inline-block w-2 h-2 bg-emerald-400 rounded-full animate-ping" />
-              <span>24/7 Service Available For All India</span>
+              <span>Available 24/7 Across India</span>
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Quick Anchor Navigation */}
           <div className="md:col-span-3 space-y-3">
-            <h3 className="text-base font-bold text-white font-heading uppercase tracking-wider text-[#E8412C]">
-              Quick Links
+            <h3 className="text-sm font-extrabold text-white font-heading uppercase tracking-wider text-[#E8412C]">
+              Quick Navigation
             </h3>
-            <ul className="space-y-2 text-sm text-gray-300">
+            <ul className="space-y-2 text-xs font-semibold text-gray-300">
               <li>
-                <a href="#hero" className="hover:text-[#E8412C] transition-colors">
+                <a href="#home" className="hover:text-[#E8412C] transition-colors">
                   Home
                 </a>
               </li>
               <li>
                 <a href="#about" className="hover:text-[#E8412C] transition-colors">
-                  About Us
+                  About
                 </a>
               </li>
               <li>
@@ -45,7 +53,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="hover:text-[#E8412C] transition-colors">
+                <a href="#work" className="hover:text-[#E8412C] transition-colors">
                   Our Work
                 </a>
               </li>
@@ -56,59 +64,66 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#contact" className="hover:text-[#E8412C] transition-colors">
-                  Contact Us
+                  Contact
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Direct Contact Info */}
+          {/* Direct Contacts */}
           <div className="md:col-span-4 space-y-3">
-            <h3 className="text-base font-bold text-white font-heading uppercase tracking-wider text-[#E8412C]">
+            <h3 className="text-sm font-extrabold text-white font-heading uppercase tracking-wider text-[#E8412C]">
               Direct Contact
             </h3>
-            <div className="space-y-4 text-sm text-gray-300">
+            <div className="space-y-3.5 text-xs text-gray-300">
               <div className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-[#E8412C] shrink-0 mt-1" />
+                <Phone className="w-4 h-4 text-[#E8412C] shrink-0 mt-0.5" />
                 <div>
                   <div className="font-bold text-white">Ummed Alam:</div>
-                  <a href="tel:+919871819548" className="hover:text-[#E8412C] transition-colors">
+                  <a href="tel:+919871819548" className="hover:text-[#E8412C] font-extrabold transition-colors">
                     +91 98718 19548
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-[#E8412C] shrink-0 mt-1" />
+                <Phone className="w-4 h-4 text-[#E8412C] shrink-0 mt-0.5" />
                 <div>
                   <div className="font-bold text-white">Suhail Saifi:</div>
-                  <a href="tel:+919999293127" className="hover:text-[#E8412C] transition-colors">
+                  <a href="tel:+919999293127" className="hover:text-[#E8412C] font-extrabold transition-colors">
                     +91 99992 93127
                   </a>
                 </div>
               </div>
 
               <div className="flex items-center gap-3">
-                <MapPin className="w-4 h-4 text-[#E8412C] shrink-0" />
-                <span>All India Service Coverage (24/7)</span>
+                <WhatsAppIcon className="w-4 h-4 text-[#25D366] shrink-0 fill-current" />
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#25D366] font-extrabold transition-colors"
+                >
+                  WhatsApp Support (24/7)
+                </a>
               </div>
 
-              <div className="flex items-center gap-3 text-xs text-gray-300">
-                <Clock className="w-4 h-4 text-[#E8412C] shrink-0" />
-                <span>Sat – Thu Working | Friday OFF</span>
+              <div className="flex items-center gap-3 text-gray-400">
+                <MapPin className="w-4 h-4 text-[#E8412C] shrink-0" />
+                <span>All India Service Coverage</span>
               </div>
             </div>
           </div>
 
         </div>
 
-        {/* Footer Bottom Centered Bar */}
+        {/* Footer Bottom Bar */}
         <div className="pt-8 text-center space-y-2">
-          <div className="text-base font-extrabold tracking-wider text-white font-heading">
-            UMMED ALAM <span className="text-[#E8412C]">|</span> All Interior Specialist
+          <div className="text-sm font-extrabold tracking-wider text-white font-heading">
+            UMMED ALAM <span className="text-[#E8412C]">•</span> All Interior Specialist
           </div>
-          <p className="text-xs text-gray-400">
-            © 2026 Ummed Alam. All Rights Reserved. Built for Ummed Alam & Suhail Saifi.
+          <p className="text-[11px] text-gray-400">
+            © {new Date().getFullYear()} UMMED ALAM. All Rights Reserved. Interior & Acoustic Solutions Across India.
           </p>
         </div>
 

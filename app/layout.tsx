@@ -28,12 +28,15 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Ummed Alam | All Interior Specialist",
-  description: "Complete interior and construction solutions — Sound Proofing, Acoustic Seat Sealing, Gypsum Partitions, Woodwork, Civil Work, Paint Work, Glass Work, and Lower Panel SS Work.",
+  metadataBase: new URL("https://umaidalam-interior.onrender.com"),
+  title: "Ummed Alam | Interior & Acoustic Solutions Across India",
+  description: "Ummed Alam provides professional interior, acoustic, soundproofing, false ceiling, woodwork, civil and glass work solutions across India, available 24/7.",
   keywords: [
     "Ummed Alam",
-    "Interior Specialist",
+    "All Interior Specialist",
+    "Interior & Acoustic Solutions Across India",
     "Sound Proofing",
+    "Acoustic Solutions",
     "Acoustic Seat Sealing",
     "Gypsum Partition",
     "Woodwork",
@@ -41,7 +44,8 @@ export const metadata: Metadata = {
     "Paint Work",
     "Glass Work",
     "Lower Panel SS Work",
-    "Noida Interior Contractor"
+    "Interior Contractor India",
+    "24/7 Interior Work",
   ],
   authors: [{ name: "Ummed Alam" }],
   icons: {
@@ -53,10 +57,10 @@ export const metadata: Metadata = {
     apple: "/icon.png",
   },
   openGraph: {
-    title: "Ummed Alam | All Interior Specialist",
-    description: "Quality Work | Modern Design | On Time Delivery. Complete interior design & construction solutions.",
-    url: "https://ummedalaminterior.com",
-    siteName: "Ummed Alam Interior",
+    title: "Ummed Alam | Interior & Acoustic Solutions Across India",
+    description: "Ummed Alam provides professional interior, acoustic, soundproofing, false ceiling, woodwork, civil and glass work solutions across India, available 24/7.",
+    url: "https://umaidalam-interior.onrender.com",
+    siteName: "Ummed Alam - All Interior Specialist",
     images: [
       {
         url: "/images/logo.png",

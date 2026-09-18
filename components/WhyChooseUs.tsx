@@ -1,100 +1,85 @@
 import Image from "next/image";
-import { CheckCircle2, Award, Clock, DollarSign, Users } from "lucide-react";
+import { CheckCircle2, ShieldCheck, MapPin, Clock, Award, Building2, Wrench } from "lucide-react";
 
 export default function WhyChooseUs() {
-  const highlights = [
+  const points = [
     {
-      title: "Experienced Team",
-      desc: "Skilled craftsmen with over a decade of hands-on acoustic and civil expertise.",
-      icon: Users,
+      title: "Complete Interior Solutions",
+      desc: "Turnkey execution covering acoustics, false ceilings, partitions, woodwork, civil, paint, and glass work.",
+      icon: Wrench,
     },
     {
-      title: "Premium Quality Material",
-      desc: "Top-grade soundproofing foam, stainless steel, glass, and wood products.",
-      icon: Award,
+      title: "All India Service",
+      desc: "Deploying experienced execution teams across residential and commercial sites throughout India.",
+      icon: MapPin,
     },
     {
-      title: "On-Time Project Delivery",
-      desc: "Strict adherence to project schedules and milestone completion guarantees.",
+      title: "Available 24/7",
+      desc: "Round-the-clock enquiry response and flexible site execution schedules to meet client timelines.",
       icon: Clock,
     },
     {
-      title: "Affordable Pricing",
-      desc: "Transparent quotes with zero hidden costs, providing maximum value.",
-      icon: DollarSign,
+      title: "Quality-Focused Work",
+      desc: "Strict material standards using high-grade acoustic foam, certified gypsum, and premium finishes.",
+      icon: ShieldCheck,
+    },
+    {
+      title: "Professional Execution",
+      desc: "Experienced craftsmen delivering precise acoustic seat sealing and structural finishing.",
+      icon: Award,
+    },
+    {
+      title: "Residential & Commercial Projects",
+      desc: "Expertise in podcast studios, auditoriums, conference rooms, offices, and luxury homes.",
+      icon: Building2,
+    },
+    {
+      title: "End-to-End Project Support",
+      desc: "Comprehensive support from initial site measurement to final site handover.",
+      icon: CheckCircle2,
     },
   ];
 
   return (
-    <section id="about" className="relative py-24 bg-white overflow-hidden">
-      {/* Full-width Navy Blue Background Band */}
-      <div className="bg-[#0B2A4A] relative py-16 lg:py-24 shadow-2xl">
+    <section id="why-us" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Right Edge Stripe Accent */}
-        <div className="absolute top-0 right-0 bottom-0 w-8 sm:w-16 stripe-accent-light opacity-90 hidden md:block" />
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs font-extrabold text-[#E8412C] tracking-widest uppercase bg-red-50 px-3 py-1 rounded-full">
+            TRUSTED SPECIALIST
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0B2A4A] font-heading mt-3 mb-4">
+            Why Choose Us
+          </h2>
+          <p className="text-base sm:text-lg text-[#4A5568] leading-relaxed">
+            We deliver reliable, high-quality interior and construction solutions backed by professional workmanship and customer-first service across India.
+          </p>
+        </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            {/* Top Text Content & Checklist */}
-            <div className="lg:col-span-7 space-y-8 text-white">
-              <div>
-                <span className="text-sm font-extrabold text-[#E8412C] tracking-widest uppercase">
-                  — ABOUT US
-                </span>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading mt-2 mb-4 text-white">
-                  Why Choose Us
-                </h2>
-                <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl">
-                  We are committed to deliver high quality interior and construction work with modern designs, durable materials and complete customer satisfaction.
-                </p>
-              </div>
-
-              {/* Checklist Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
-                {highlights.map((item, idx) => {
-                  return (
-                    <div key={idx} className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
-                      <div className="w-10 h-10 rounded-full bg-[#E8412C] text-white flex items-center justify-center shrink-0 shadow-md">
-                        <CheckCircle2 className="w-6 h-6 stroke-[2.5]" />
-                      </div>
-                      <div>
-                        <h3 className="font-bold text-lg text-white font-heading">
-                          {item.title}
-                        </h3>
-                        <p className="text-xs sm:text-sm text-gray-300 mt-1 leading-snug">
-                          {item.desc}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Bottom/Right Image: Placed below content on mobile */}
-            <div className="lg:col-span-5 relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform lg:translate-x-4 group">
-                <Image
-                  src="/images/about-interior.jpg"
-                  alt="Ummed Alam interior craftsmen at work on acoustic partition wall"
-                  width={600}
-                  height={500}
-                  className="w-full h-[320px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-
-                {/* Overlaid Badge */}
-                <div className="absolute bottom-4 right-4 bg-[#E8412C] text-white px-5 py-3 rounded-xl shadow-lg flex items-center gap-3">
-                  <CheckCircle2 className="w-8 h-8 text-white shrink-0" />
-                  <div>
-                    <div className="text-sm font-bold uppercase tracking-wider">Certified Work</div>
-                    <div className="text-xs text-white/90">Commercial & Residential</div>
-                  </div>
+        {/* 7 Highlights Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {points.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={idx}
+                className="bg-[#EEF3F8] p-6 rounded-2xl border border-blue-50 hover:border-[#E8412C]/30 hover:bg-white hover:shadow-xl transition-all duration-300 group flex items-start gap-4"
+              >
+                <div className="w-12 h-12 rounded-xl bg-white group-hover:bg-[#E8412C] text-[#E8412C] group-hover:text-white flex items-center justify-center shrink-0 shadow-xs transition-colors duration-300">
+                  <Icon className="w-6 h-6 stroke-[2.2]" />
+                </div>
+                <div>
+                  <h3 className="font-extrabold text-base text-[#0B2A4A] font-heading group-hover:text-[#E8412C] transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#4A5568] mt-1.5 leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
-            </div>
-
-          </div>
+            );
+          })}
         </div>
 
       </div>

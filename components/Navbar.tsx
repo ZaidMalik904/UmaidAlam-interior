@@ -31,7 +31,7 @@ export function IndiaFlagIcon({ className = "w-4 h-3" }: { className?: string })
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("hero");
+  const [activeSection, setActiveSection] = useState("home");
 
   const announcements = [
     {
@@ -115,7 +115,7 @@ export default function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
 
-      const sections = ["hero", "about", "services", "portfolio", "gallery", "contact"];
+      const sections = ["home", "about", "services", "work", "gallery", "contact"];
       const current = sections.find((section) => {
         const el = document.getElementById(section);
         if (el) {
@@ -147,16 +147,16 @@ export default function Navbar() {
   }, [mobileMenuOpen]);
 
   const navLinks = [
-    { name: "Home", href: "#hero", id: "hero" },
-    { name: "About Us", href: "#about", id: "about" },
+    { name: "Home", href: "#home", id: "home" },
+    { name: "About", href: "#about", id: "about" },
     { name: "Services", href: "#services", id: "services" },
-    { name: "Our Work", href: "#portfolio", id: "portfolio" },
+    { name: "Our Work", href: "#work", id: "work" },
     { name: "Gallery", href: "#gallery", id: "gallery" },
     { name: "Contact", href: "#contact", id: "contact" },
   ];
 
   const whatsappUrl =
-    "https://wa.me/919871819548?text=Hello%20Ummed%20Alam%20Interior%2C%20I%20am%20interested%20in%20your%20services";
+    "https://wa.me/919871819548?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20interior%2Facoustic%20work%20requirement.%20Please%20share%20more%20details.";
 
   return (
     <>

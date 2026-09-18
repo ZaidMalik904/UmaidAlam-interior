@@ -21,7 +21,7 @@ export default function FloatingContact() {
   const [showNumbers, setShowNumbers] = useState(false);
 
   const whatsappUrl =
-    "https://wa.me/919871819548?text=Hello%20Ummed%20Alam%20Interior%2C%20I%20am%20interested%20in%20your%20services";
+    "https://wa.me/919871819548?text=Hello%2C%20I%20would%20like%20to%20discuss%20an%20interior%2Facoustic%20work%20requirement.%20Please%20share%20more%20details.";
 
   return (
     <div className="fixed bottom-6 right-6 z-40 hidden md:flex flex-col items-end gap-3 font-sans">
@@ -30,7 +30,7 @@ export default function FloatingContact() {
         <div className="bg-white rounded-2xl shadow-2xl p-4 border border-gray-100 mb-2 w-64 animate-in slide-in-from-bottom duration-200">
           <div className="flex items-center justify-between border-b pb-2 mb-3">
             <span className="text-xs font-bold text-[#0B2A4A] uppercase tracking-wider">
-              Call Direct
+              Call Direct (24/7)
             </span>
             <button
               onClick={() => setShowNumbers(false)}
@@ -86,7 +86,7 @@ export default function FloatingContact() {
         <button
           onClick={() => setShowNumbers(!showNumbers)}
           aria-label="Call Ummed Alam"
-          className="w-14 h-14 rounded-full bg-[#0B2A4A] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group relative border-2 border-white"
+          className="w-14 h-14 rounded-full bg-[#0B2A4A] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group relative border-2 border-white cursor-pointer"
         >
           <Phone className="w-6 h-6 group-hover:rotate-12 transition-transform" />
           <span className="absolute right-16 bg-[#0B2A4A] text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
