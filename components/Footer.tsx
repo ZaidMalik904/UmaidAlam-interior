@@ -1,5 +1,5 @@
 import Logo from "./Logo";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -17,9 +17,9 @@ export default function Footer() {
               Complete interior and civil construction solutions specializing in Sound Proofing, Acoustic Seat Sealing, Gypsum Partitions & Woodwork, Civil Work, Paint Work, Glass Work & Lower Panel SS Work.
             </p>
 
-            <div className="pt-2 flex items-center gap-3 text-xs text-gray-400">
+            <div className="pt-2 flex items-center gap-3 text-xs text-emerald-400 font-bold">
               <span className="inline-block w-2 h-2 bg-emerald-400 rounded-full animate-ping" />
-              <span>Available for Commercial & Residential Projects in Noida & NCR</span>
+              <span>24/7 Service Available For All India</span>
             </div>
           </div>
 
@@ -90,7 +90,12 @@ export default function Footer() {
 
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-[#E8412C] shrink-0" />
-                <span>Noida, Uttar Pradesh & NCR</span>
+                <span>All India Service Coverage (24/7)</span>
+              </div>
+
+              <div className="flex items-center gap-3 text-xs text-gray-300">
+                <Clock className="w-4 h-4 text-[#E8412C] shrink-0" />
+                <span>Sat – Thu Working | Friday OFF</span>
               </div>
             </div>
           </div>

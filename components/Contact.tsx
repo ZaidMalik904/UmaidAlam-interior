@@ -114,19 +114,23 @@ export default function Contact() {
             </div>
             <div>
               <span className="text-xs font-bold text-gray-500 uppercase tracking-wider block">
-                Location & Coverage Area
+                Location & Service Area
               </span>
-              <p className="text-lg font-bold text-[#0B2A4A] font-heading mt-1">
-                Noida, Uttar Pradesh & Delhi NCR
+              <p className="text-xl font-extrabold text-[#0B2A4A] font-heading mt-1">
+                All India Coverage
               </p>
-              <p className="text-xs text-gray-500 mt-1">
-                Full-service commercial and residential site execution
+              <div className="mt-2 inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1.5 rounded-full border border-emerald-300 shadow-xs">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span>24/7 Service Available For All India</span>
+              </div>
+              <p className="text-xs text-gray-500 mt-2">
+                Full-service commercial and residential site execution across Noida, NCR & All India
               </p>
             </div>
           </div>
 
           {/* Working Hours */}
-          <div className="bg-[#0B2A4A] text-white p-8 rounded-3xl shadow-md space-y-3">
+          <div className="bg-[#0B2A4A] text-white p-8 rounded-3xl shadow-md space-y-4">
             <div className="w-12 h-12 rounded-xl bg-white/10 text-[#E8412C] flex items-center justify-center">
               <Clock className="w-6 h-6 stroke-[2.2]" />
             </div>
@@ -134,11 +138,18 @@ export default function Contact() {
               <span className="text-xs font-bold text-[#E8412C] uppercase tracking-wider block">
                 Working Hours
               </span>
-              <p className="text-base text-gray-100 mt-1 font-bold">
-                Monday – Saturday: 9:00 AM – 7:30 PM
-              </p>
-              <p className="text-xs text-gray-400 mt-1">
-                Site visits & inspection available on appointment
+              <div className="mt-2 space-y-2">
+                <div className="flex items-center justify-between text-sm sm:text-base font-bold text-gray-100 bg-white/5 p-2.5 rounded-xl border border-white/10">
+                  <span>Saturday – Thursday:</span>
+                  <span className="text-emerald-400 font-extrabold">9:00 AM – 7:30 PM</span>
+                </div>
+                <div className="flex items-center justify-between text-sm sm:text-base font-bold text-gray-100 bg-red-500/10 p-2.5 rounded-xl border border-red-500/20">
+                  <span>Friday:</span>
+                  <span className="text-[#E8412C] font-extrabold uppercase bg-red-500/20 px-2.5 py-0.5 rounded-md">OFF (Closed)</span>
+                </div>
+              </div>
+              <p className="text-xs text-gray-400 mt-2">
+                * 24/7 Service & Enquiries Available All Over India
               </p>
             </div>
           </div>

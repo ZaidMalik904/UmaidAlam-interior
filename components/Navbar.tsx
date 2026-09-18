@@ -2,13 +2,114 @@
 
 import { useState, useEffect } from "react";
 import Logo from "./Logo";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone, Menu, X, ChevronLeft, ChevronRight } from "lucide-react";
 import { WhatsAppIcon } from "./FloatingContact";
+
+export function IndiaFlagIcon({ className = "w-4 h-3" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+      <rect width="900" height="200" fill="#FF9933" />
+      <rect y="200" width="900" height="200" fill="#FFFFFF" />
+      <rect y="400" width="900" height="200" fill="#138808" />
+      <circle cx="450" cy="300" r="80" fill="none" stroke="#000080" strokeWidth="15" />
+      <circle cx="450" cy="300" r="15" fill="#000080" />
+      {Array.from({ length: 24 }).map((_, i) => (
+        <line
+          key={i}
+          x1="450"
+          y1="300"
+          x2={450 + 80 * Math.cos((i * 15 * Math.PI) / 180)}
+          y2={300 + 80 * Math.sin((i * 15 * Math.PI) / 180)}
+          stroke="#000080"
+          strokeWidth="6"
+        />
+      ))}
+    </svg>
+  );
+}
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
+
+  const announcements = [
+    {
+      id: 1,
+      content: (
+        <span>
+          <span className="text-[#FF4D38] font-black uppercase">24/7 Service Available</span> For All India
+        </span>
+      ),
+      highlight: "ALL INDIA",
+      icon: <IndiaFlagIcon className="w-4 h-3 rounded-[1px] shadow-xs shrink-0" />,
+    },
+    {
+      id: 2,
+      content: (
+        <span>
+          Saturday – Thursday Working | <span className="text-[#FF4D38] font-black uppercase underline">Friday OFF</span>
+        </span>
+      ),
+      highlight: "SCHEDULE",
+      icon: "📅",
+    },
+    {
+      id: 3,
+      content: (
+        <span>
+          <span className="text-[#FF4D38] font-black uppercase">Specialist:</span> Sound Proofing | Acoustic Seat Sealing | Civil Work
+        </span>
+      ),
+      highlight: "SERVICES",
+      icon: "🛠️",
+    },
+    {
+      id: 4,
+      content: (
+        <span>
+          Ummed Alam: <a href="tel:+919871819548" className="text-[#FF4D38] font-black hover:underline">98718 19548</a>  |  Suhail Saifi: <a href="tel:+919999293127" className="text-[#FF4D38] font-black hover:underline">99992 93127</a>
+        </span>
+      ),
+      highlight: "CALL DIRECT",
+      icon: "📞",
+    },
+    {
+      id: 5,
+      content: (
+        <span>
+          <span className="text-[#FF4D38] font-black uppercase">Free Site Inspection</span> & Consultation Across India
+        </span>
+      ),
+      highlight: "ENQUIRIES",
+      icon: "⚡",
+    },
+  ];
+
+  const [tickerIndex, setTickerIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    if (isPaused) return;
+
+    const timer = setInterval(() => {
+      setTickerIndex((prev) => (prev + 1) % announcements.length);
+    }, 3500);
+
+    return () => clearInterval(timer);
+  }, [isPaused, announcements.length]);
+
+  const handlePrevTicker = () => {
+    setTickerIndex((prev) =>
+      prev === 0 ? announcements.length - 1 : prev - 1
+    );
+  };
+
+  const handleNextTicker = () => {
+    setTickerIndex((prev) => (prev + 1) % announcements.length);
+  };
+
+  const currentTicker = announcements[tickerIndex];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,11 +163,11 @@ export default function Navbar() {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-white ${
           scrolled || mobileMenuOpen
-            ? "shadow-md py-2.5"
-            : "py-3.5 border-b border-gray-100"
+            ? "shadow-md pt-1.5 pb-0"
+            : "pt-2 pb-0 border-b border-gray-100"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-1.5">
           <div className="flex items-center justify-between">
             
             {/* Logo */}
@@ -134,6 +235,51 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+
+        {/* Compact High-Focus Auto-Rotating Ticker Bar (Just Below Main Navbar) */}
+        <div className="bg-[#071C33] text-white py-0.5 px-2 sm:px-4 border-t border-[#E8412C]/60 font-sans shadow-xs">
+          <div className="max-w-7xl mx-auto flex items-center justify-between gap-1.5 sm:gap-3">
+            
+            {/* Left Arrow Button */}
+            <button
+              onClick={handlePrevTicker}
+              aria-label="Previous announcement"
+              className="p-0.5 rounded-full bg-white/10 hover:bg-[#E8412C] text-white transition-colors duration-200 shrink-0 focus:outline-none active:scale-95 cursor-pointer"
+            >
+              <ChevronLeft className="w-3.5 h-3.5 stroke-[2.5]" />
+            </button>
+
+            {/* Center Text Banner with Red Focus */}
+            <div
+              onMouseEnter={() => setIsPaused(true)}
+              onMouseLeave={() => setIsPaused(false)}
+              className="flex-1 overflow-hidden text-center h-6 flex items-center justify-center cursor-default"
+            >
+              <div
+                key={currentTicker.id}
+                className="inline-flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold tracking-wide transition-all duration-300 ease-in-out animate-in fade-in"
+              >
+                <span className="text-xs shrink-0">{currentTicker.icon}</span>
+                <span className="bg-[#E8412C] text-white text-[9px] sm:text-[10px] font-black uppercase px-1.5 py-0.2 rounded shrink-0 hidden xs:inline-block shadow-xs">
+                  {currentTicker.highlight}
+                </span>
+                <span className="text-white font-extrabold max-w-full truncate sm:whitespace-normal">
+                  {currentTicker.content}
+                </span>
+              </div>
+            </div>
+
+            {/* Right Arrow Button */}
+            <button
+              onClick={handleNextTicker}
+              aria-label="Next announcement"
+              className="p-0.5 rounded-full bg-white/10 hover:bg-[#E8412C] text-white transition-colors duration-200 shrink-0 focus:outline-none active:scale-95 cursor-pointer"
+            >
+              <ChevronRight className="w-3.5 h-3.5 stroke-[2.5]" />
+            </button>
+
+          </div>
+        </div>
       </header>
 
       {/* Mobile Drawer Menu (Outside Header, Z-INDEX 60, Solid White Drawer) */}
@@ -180,6 +326,17 @@ export default function Navbar() {
             </div>
 
             <div className="pt-6 border-t border-gray-100 flex flex-col gap-3">
+              {/* 24/7 All India Info Card */}
+              <div className="p-3 bg-[#EEF3F8] rounded-2xl text-center text-xs space-y-1 border border-blue-100">
+                <div className="font-extrabold text-[#0B2A4A] flex items-center justify-center gap-1.5">
+                  <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
+                  <span>24/7 Service Available For All India</span>
+                </div>
+                <div className="text-gray-600 font-medium">
+                  Sat – Thu Working | <span className="text-[#E8412C] font-bold">Friday OFF</span>
+                </div>
+              </div>
+
               {/* WhatsApp Mobile Action */}
               <a
                 href={whatsappUrl}

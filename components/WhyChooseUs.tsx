@@ -36,29 +36,7 @@ export default function WhyChooseUs() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-            {/* Left Image: Offset design accent */}
-            <div className="lg:col-span-5 relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform lg:-translate-x-6 group">
-                <Image
-                  src="/images/about-interior.jpg"
-                  alt="Ummed Alam interior craftsmen at work on acoustic partition wall"
-                  width={600}
-                  height={500}
-                  className="w-full h-[360px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
-                />
-
-                {/* Overlaid Badge */}
-                <div className="absolute bottom-4 right-4 bg-[#E8412C] text-white px-5 py-3 rounded-xl shadow-lg flex items-center gap-3">
-                  <CheckCircle2 className="w-8 h-8 text-white shrink-0" />
-                  <div>
-                    <div className="text-sm font-bold uppercase tracking-wider">Certified Work</div>
-                    <div className="text-xs text-white/90">Commercial & Residential</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Middle & Right Content */}
+            {/* Top Text Content & Checklist */}
             <div className="lg:col-span-7 space-y-8 text-white">
               <div>
                 <span className="text-sm font-extrabold text-[#E8412C] tracking-widest uppercase">
@@ -92,7 +70,28 @@ export default function WhyChooseUs() {
                   );
                 })}
               </div>
+            </div>
 
+            {/* Bottom/Right Image: Placed below content on mobile */}
+            <div className="lg:col-span-5 relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white transform lg:translate-x-4 group">
+                <Image
+                  src="/images/about-interior.jpg"
+                  alt="Ummed Alam interior craftsmen at work on acoustic partition wall"
+                  width={600}
+                  height={500}
+                  className="w-full h-[320px] sm:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+
+                {/* Overlaid Badge */}
+                <div className="absolute bottom-4 right-4 bg-[#E8412C] text-white px-5 py-3 rounded-xl shadow-lg flex items-center gap-3">
+                  <CheckCircle2 className="w-8 h-8 text-white shrink-0" />
+                  <div>
+                    <div className="text-sm font-bold uppercase tracking-wider">Certified Work</div>
+                    <div className="text-xs text-white/90">Commercial & Residential</div>
+                  </div>
+                </div>
+              </div>
             </div>
 
           </div>

@@ -15,12 +15,13 @@ export default function Hero() {
           <div className="lg:col-span-6 flex flex-col justify-center text-left space-y-6 z-10">
             
             {/* Tagline Row */}
-            <div className="inline-flex flex-wrap items-center gap-2 text-xs sm:text-sm font-bold text-[#E8412C] tracking-wide uppercase bg-red-50/80 px-4 py-2 rounded-full w-max border border-red-100 shadow-xs">
-              <span>Quality Work</span>
-              <span className="text-[#0B2A4A] opacity-40">|</span>
-              <span>Modern Design</span>
-              <span className="text-[#0B2A4A] opacity-40">|</span>
-              <span>On Time Delivery</span>
+            <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 text-[11px] xs:text-xs sm:text-sm font-bold tracking-wide bg-emerald-50/90 px-3.5 sm:px-4 py-2 rounded-2xl sm:rounded-full max-w-full w-fit border border-emerald-200 shadow-xs">
+              <span className="flex items-center gap-1.5 sm:gap-2 text-emerald-800 font-extrabold">
+                <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+                <span>24/7 Service Available For All India</span>
+              </span>
+              <span className="text-[#0B2A4A] opacity-30 hidden xs:inline">|</span>
+              <span className="text-[#E8412C] uppercase text-[10px] sm:text-xs hidden xs:inline">Quality Guaranteed</span>
             </div>
 
             {/* Main Heading */}
@@ -38,15 +39,15 @@ export default function Hero() {
               Sound Proofing <span className="text-[#E8412C] font-semibold">|</span> Acoustic Seat Sealing <span className="text-[#E8412C] font-semibold">|</span> Gypsum Partition & Woodwork <span className="text-[#E8412C] font-semibold">|</span> Civil Work <span className="text-[#E8412C] font-semibold">|</span> Paint Work <span className="text-[#E8412C] font-semibold">|</span> Glass Work <span className="text-[#E8412C] font-semibold">|</span> Lower Panel SS Work
             </p>
 
-            {/* Client Names & Direct Numbers Row */}
-            <div className="flex flex-wrap items-center gap-4 text-xs sm:text-sm font-bold text-[#0B2A4A] bg-[#EEF3F8] p-3.5 rounded-2xl border border-blue-100">
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-[#E8412C]" />
+            {/* Client Names & Direct Numbers Row (Single Line) */}
+            <div className="flex items-center gap-2 sm:gap-4 text-[11px] xs:text-xs sm:text-sm font-bold text-[#0B2A4A] bg-[#EEF3F8] px-3 py-2.5 sm:p-3.5 rounded-2xl border border-blue-100 whitespace-nowrap overflow-x-auto">
+              <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+                <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#E8412C] shrink-0" />
                 <span>Ummed Alam: <a href="tel:+919871819548" className="text-[#E8412C] hover:underline font-extrabold">98718 19548</a></span>
               </div>
-              <span className="text-gray-300 hidden sm:inline">|</span>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-[#0B2A4A]" />
+              <span className="text-gray-300 shrink-0">|</span>
+              <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+                <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#0B2A4A] shrink-0" />
                 <span>Suhail Saifi: <a href="tel:+919999293127" className="text-[#0B2A4A] hover:underline font-extrabold">99992 93127</a></span>
               </div>
             </div>
@@ -80,7 +81,7 @@ export default function Hero() {
               </div>
               <div className="flex items-center gap-2.5">
                 <Clock className="w-5 h-5 text-[#E8412C] shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-[#0B2A4A]">On-Time Completion</span>
+                <span className="text-xs sm:text-sm font-semibold text-[#0B2A4A]">24/7 All India Service</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Award className="w-5 h-5 text-[#E8412C] shrink-0" />
